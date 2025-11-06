@@ -1,14 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="assets/bs.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="assets/bs.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/bs-icons.css">
     <title>IoT</title>
 </head>
+
 <body>
-  https://placehold.co/840x472
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Pslib IoT Dashboard</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                    <span>
+                        <small>3.1.2025, 17:25</small>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+
+        <div class="container-fluid my-4">
+            <div class="row">
+
+                <div class="col-3">
+                    <ul class="list-group d-flex">
+                        <li class="list-group-item active"><i class="bi bi-house-gear pe-1"></i>Hlavní panel</li>
+                        <span class="justify-content-between">
+                            <li class="list-group-item"><i class="bi bi-bell pe-1"></i>Oznámení<span
+                                    class="badge rounded-pill text-bg-primary">2</span></li>
+                        </span>
+                        <li class="list-group-item"><i class="bi bi-plug pe-1"></i>Moje zařízení</li>
+                        <li class="list-group-item"><i class="bi bi-sliders pe-1"></i>Nastavení</li>
+                    </ul>
+                </div>
+
+                <div class="col-9">
+                    <div class="row g-4">
+
+
+                        <div class="col-4 md-6 lg-4">
+
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Teplota - Hlavní vchod</h5>
+                                    <p class="card-subtitle my-3">23.4 C</p>
+                                    <p class="card-text text-body-secondary"><small class="my-2">Další měření za: 5 minut</small></p>
+                                    <a href="#" class="btn btn-primary">Změřit teď</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-4 md-6 lg-4">
+
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Teplota - Kuchyně</h5>
+                                    <p class="card-subtitle my-3">25.2 C</p>
+                                    <p class="card-text text-body-secondary"><small class="my-2">Další měření za: 12 minut</small></p>
+                                    <a href="#" class="btn btn-primary">Změřit teď</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-4 md-6 lg-4">
+
+                            <div class="card border-success">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Přední vchod</h5>
+                                    <p class="card-subtitle my-3"><i class="bi bi-lock"></i></p>
+                                    <p class="card-text text-body-secondary"><small class="my-2">Zamknuto</small></p>
+                                    <a href="#" class="btn btn-warning">Odemknout</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-4 md-6">
+
+                            <div class="card border-">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Teplota - Hlavní vchod</h5>
+                                    <p class="card-subtitle my-3"><i class="bi bi-unlock"></i></p>
+                                    <p class="card-text text-body-secondary"><small class="my-2">Další měření za: 5 minut</small></p>
+                                    <a href="#" class="btn btn-success">Změřit teď</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row g-4 my-3">
+
+
+                            <div class="col-4 md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                    <h5 class="card-text text-center">Kamera Západ</h5>
+                                    </div>
+                                    <img src="screen/Dashboard-w1200xl.png" class="card-img-top" alt="Náhled kamery západ">
+                                </div>
+                            </div>
+
+                            <div class="col-4 md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                    <h5 class="card-text text-center">Kamera Východ</h5>
+                                    </div>
+                                    <img src="screen/Dashboard-w1200xl.png" class="card-img-top" alt="Náhled kamery východ">
+                                </div>
+                            </div>
+
+                            <div class="col-4 md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                    <h5 class="card-text text-center">Kamera Sever</h5>
+                                    </div>
+                                    <img src="screen/Dashboard-w1200xl.png" class="card-img-top" alt="Náhled kamery sever">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                        
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
 </body>
+
 </html>
